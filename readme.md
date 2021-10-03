@@ -9,7 +9,8 @@ This is a react application utilizing Vega GraphQL API and Apollo. Everything st
 Index.js
 ----
 
-This is where the Apollo client is created for HTTP and Websocket connection to the Vega GraphQl Server.
+This is where the Apollo client is created for HTTP and Websocket connection to the Vega GraphQl Server, and where the react App is rendered to view.
+
 - All documentation for creating a client can be found [here] (https://www.apollographql.com/docs/react/get-started/)
 
 - Once the client is created ApolloProvider is wrapped around the React App provided with the client.

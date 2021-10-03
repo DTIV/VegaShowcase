@@ -24,7 +24,7 @@ body {
 .mrkt-info-wrap{
   text-align: center;
   margin-bottom: 2rem;
-  background-color: var(--foreground);
+  background-color: var(--tbl-color);
   width: 80%;
   margin: 1rem auto;
   padding-top: 1rem;
@@ -164,6 +164,11 @@ body {
   margin-top: 2rem;
   text-align: center;
   color: var(--wht);
+  margin: 1rem 0;
+}
+
+.orderstream-wrap, .tradestream-wrap, .mrktdata-wrap{
+  margin: 3rem 0;
 }
 
 .mrkt-state{
@@ -212,10 +217,7 @@ tr.sell{
   background-color: rgba(255, 0, 0, 0.300);
 }
 
-.orderstream-wrap, .tradestream-wrap{
-  margin: 1rem 0;
-  
-}
+
 .table-headers{
   margin: 1rem 0;
   text-align: center;
@@ -230,7 +232,7 @@ tr.sell{
 }
 
 
-.party-input{
+.party-input, .wall-input, .pass-input{
   width: 100%;
   padding: 0.5rem
 }
@@ -263,12 +265,13 @@ tr.sell{
   
 }
 
-.posi-input, .side-select, .sub-btn, .party-input{
+.posi-input, .side-select, .sub-btn, .party-input, .wall-input, .pass-input{
   width: 100%;
   padding: 0.5rem;
   text-align: center;
   font-size: 1rem;
   border-radius: 5px;
+  margin: 0.2rem 0;
 }
 
 .sub-btn{
@@ -285,4 +288,22 @@ tr.sell{
 .mkdata-table, .prtydata-table{
   table-layout: fixed; 
   width: 100%
+}
+
+.transaction.hide{
+  display: none;
+}
+
+.transaction.active{
+  display: block;
+  color: green;
+}
+
+.transaction{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.rawTx{
+  margin: 1rem 0;
 }

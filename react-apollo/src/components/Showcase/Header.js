@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <section className="header-wrap">
             <div className="logo">
-                <img src="https://cdn-images-1.medium.com/max/328/1*ENHya7jFyLl7FgsfKKVvlg@2x.jpeg" alt="" />
+               <h1>VEGA GRAPHQL</h1>
             </div>
             <h1 className="title">SHOWCASE APPLICATION</h1>
             <div>
