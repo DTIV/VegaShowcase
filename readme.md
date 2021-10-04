@@ -10,6 +10,14 @@ View Main Schema: [Here](https://docs.fairground.vega.xyz/api/graphql/)
 Everything starts at Index.js.
 
 ***Navigate to react-apollo/src for further documentation for this application.***
-
+Home Page
+--------------------
 ![name](img/img1.png)
 
+Market Data Page
+--------------------
+![name](img/img2.png)
+
+Party Page
+--------------------
+![name](img/img3.png)
