@@ -1,30 +1,10 @@
-VEGA SHOWCASE APPLICATION
+# VEGA SHOWCASE APPLICATION
 -------------------------
+This Showcase application is my submission for Gitcoin Grants Round 11 Hackathon: Build Amazing GraphQL Reference Applications Against The Vega APIs.
+This is a react application utilizing Vegas GraphQL API and Apollo. This application features using Queries to listing markets and there status. Users can view market data for a specific trading product, Prepare, sign and submit orders for a particular market using Mutations, and view streaming trade and order data with Subscriptions. Users can also access public party data, view party balances and any governace proposals related to the selected party.
 
-How this Application Works:
----
+Use Vega GraphQL Playground: [Here] (https://lb.testnet.vega.xyz/playground)
+View Main Schema: [Here] (https://docs.fairground.vega.xyz/api/graphql/)
+Everything starts at Index.js.
 
-This is a react application utilizing Vega GraphQL API and Apollo. Everything starts at Index.js.
-
-Index.js
-----
-
-This is where the Apollo client is created for HTTP and Websocket connection to the Vega GraphQl Server, and where the react App is rendered to view.
-
-- All documentation for creating a client can be found [here] (https://www.apollographql.com/docs/react/get-started/)
-
-- Once the client is created ApolloProvider is wrapped around the React App provided with the client.
-
-```
-<ApolloProvider client={client}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ApolloProvider>,
-```
-
-
-App.js
--------
-App.js is where all the components for this application come together to be rendered on index.js
-
+Navigate to react-apollo/src for further documentation for this application.
