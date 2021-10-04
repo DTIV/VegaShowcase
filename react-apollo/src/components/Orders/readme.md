@@ -108,7 +108,7 @@ Then the user gets there keys. If they dont have any keys, then keys are generat
 See the documentation for retrieving keys: [here](https://docs.fairground.vega.xyz/wallet-api/#list-keys)
 See the documentation for generating keys [here](https://docs.fairground.vega.xyz/wallet-api/#generate-a-new-key-pair)
 
-**GET KEYS**
+GET KEYS
 ```
 const getKeysURL = "https://wallet.testnet.vega.xyz/api/v1/keys"
     const getKeys = await fetch(getKeysURL, {
@@ -120,7 +120,7 @@ const getKeysURL = "https://wallet.testnet.vega.xyz/api/v1/keys"
     const getKeysResponse = await getKeys.json();
     var keys = getKeysResponse.keys
 ```
-**GEN KEYS**
+GEN KEYS
 ```
     if(keys.length < 1){
         // GEN KEYS
