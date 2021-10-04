@@ -3,7 +3,7 @@
 
 These are all the components within this application, and they all server there own purpose.
 
-Navigate to each different component section to learn more about them and the way they interact with the different Vega API's
+***Navigate to each different component section*** to learn more about them and the way they interact with the different Vega API's
 
 
 **Markets**
