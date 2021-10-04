@@ -101,15 +101,18 @@ There are three different tables for Accounts, Positions and Proposals component
 ## ACOUNTS
 -----------
 See Account Documentation: [here](https://docs.fairground.vega.xyz/api/graphql/account.doc.html)
+
 Accounts takes the data passed and maps through all the results and return back to PartyData component
 
 ## POSTIONS
 -----------
 View Documentation for positions: [here](https://docs.fairground.vega.xyz/api/graphql/position.doc.html)
+
 Positions takes the data passed and maps through all the results and return back to PartyData component
 
 
 ## PROPOSALS
 ------------
 View the documentation for proposals: [here](https://docs.fairground.vega.xyz/api/graphql/proposal.doc.html)
+
 Proposals takes the data passed and maps through all the results and return back to PartyData component
