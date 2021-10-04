@@ -35,7 +35,6 @@ const GET_PARTY_DATA = gql`
 
 // GETTING DATA FROM PARTYLIST COMP, SENDING DATA TO ACCOUNTS AND POSITIONS COMP
 const PartyData = (props) => {
-    console.log(props)
     var url = props.match.url;
     var partyID = url.replace("party/","").replace("/", "")
     const { loading, error, data } = useQuery(GET_PARTY_DATA, { variables : { partyID }});
