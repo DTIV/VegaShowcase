@@ -5,6 +5,7 @@ This is a react application utilizing Vegas GraphQL API and Apollo. This applica
 
 Use Vega GraphQL Playground: [Here](https://lb.testnet.vega.xyz/playground)
 View Main Schema: [Here](https://docs.fairground.vega.xyz/api/graphql/)
+
 Everything starts at Index.js.
 
-Navigate to react-apollo/src for further documentation for this application.
+***Navigate to react-apollo/src for further documentation for this application.***

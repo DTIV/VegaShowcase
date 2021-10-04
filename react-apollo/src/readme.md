@@ -4,17 +4,17 @@
 Before creating with Vega GraphQL a client will need to be created with apollo.
 This will be done in the main react files Index.js and App.js
 
-For further component documentation, Navigate to the components folder.
+***For further component documentation, Navigate to the components folder.***
 
 ## Index.js
 ----
 
 This is where the Apollo client is created for HTTP and Websocket connection to the Vega GraphQl Server, and where the react App is rendered to view.
 
-- For Queries and Mutations, All documentation for creating a client can be found [here] (https://www.apollographql.com/docs/react/get-started/)
+- For Queries and Mutations, All documentation for creating a client can be found [here](https://www.apollographql.com/docs/react/get-started/)
 
 - For Subscriptions, client is created with a split between HTTP and Websocket connection depending on purpose,
-see documentation [here] (https://www.apollographql.com/docs/react/data/subscriptions/)
+see documentation [here](https://www.apollographql.com/docs/react/data/subscriptions/)
 ***use wss:// not ws:// as indicated in Apollo Docs***
 
 - Once the client is created ApolloProvider is wrapped around the React App provided with the client.

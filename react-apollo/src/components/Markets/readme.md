@@ -24,7 +24,7 @@ const MARKETS = gql`
   }
 `;
 ```
-Try The GraphQL code: [here] (https://lb.testnet.vega.xyz/playground)
+Try The GraphQL code: [here](https://lb.testnet.vega.xyz/playground)
 
 
 Next, The query is made:
@@ -51,14 +51,14 @@ return data.markets.map((market) => (
   ));
 
 ```
-Apollo Query Documentation: [here] (https://www.apollographql.com/docs/react/data/queries/)
+Apollo Query Documentation: [here](https://www.apollographql.com/docs/react/data/queries/)
 
 ## Market Data
 --------------
 Once the user selects a market they are routed to the MrktData component. In this component we make a paramaterized Query to Vega GraphQL to get the specific Market Data. The specific Market Data is then organized into a table. Market Data renders PrepareOrder, OrderStream and TradeStream.
 
-View Market Schema : [here] (https://docs.fairground.vega.xyz/api/graphql/market.doc.html)
-View Market Data Schema : [here] (https://docs.fairground.vega.xyz/api/graphql/marketdata.doc.html)
+View Market Schema : [here](https://docs.fairground.vega.xyz/api/graphql/market.doc.html)
+View Market Data Schema : [here](https://docs.fairground.vega.xyz/api/graphql/marketdata.doc.html)
 ```
 import { useQuery, gql } from "@apollo/client";
 

@@ -20,7 +20,7 @@ const [partyKey, setPartyKey ] = useState("")
 ## PARTY LIST
 --------------
 PartyList component is similar to MarketsList component. A Query is made to GraphQL to get all the parties on Vega.
-View the Query Schema: [here] (https://docs.fairground.vega.xyz/api/graphql/query.doc.html)
+View the Query Schema: [here](https://docs.fairground.vega.xyz/api/graphql/query.doc.html)
 ```
 import { useQuery, gql } from "@apollo/client";
 import { Link } from 'react-router-dom';
@@ -33,7 +33,7 @@ const PARTY = gql`
     }
 `;
 ```
-Try The GraphQL code: [here] (https://lb.testnet.vega.xyz/playground)
+Try The GraphQL code: [here](https://lb.testnet.vega.xyz/playground)
 
 The query is then made with useQuery, and the data is then filtered by the users input passed in PartySelect.
 The objects are then mapped and for each Party object an Link is created containing the Party component routing to the PartyData component.
@@ -55,7 +55,7 @@ Creates a div for each party that has been mapped. Party object is passed in at 
 
 ## PARTY DATA
 A paramaterized GraphQL Query is made to get specific Party Data. Within PartyData component users can view account balances and types, positions and PNL metrics as well as governace proposals.
-View Party Schema: [here] (https://docs.fairground.vega.xyz/api/graphql/party.doc.html)
+View Party Schema: [here](https://docs.fairground.vega.xyz/api/graphql/party.doc.html)
 ```
 import { useQuery, gql } from "@apollo/client";
 
@@ -111,5 +111,5 @@ Positions takes the data passed and maps through all the results and return back
 
 ## PROPOSALS
 ------------
-View the documentation for proposals: [here] (https://docs.fairground.vega.xyz/api/graphql/proposal.doc.html)
+View the documentation for proposals: [here](https://docs.fairground.vega.xyz/api/graphql/proposal.doc.html)
 Proposals takes the data passed and maps through all the results and return back to PartyData component

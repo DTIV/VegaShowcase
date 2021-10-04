@@ -5,8 +5,8 @@ The Subscription incudes data for ID, price, side and size of an order.
 
 Ensure that the client has been created for a websocket connection.
 
-See Apollo Docs: [here] (https://www.apollographql.com/docs/react/data/subscriptions/)
-Subscription Schema : [here] (https://docs.fairground.vega.xyz/api/graphql/subscription.doc.html)
+See Apollo Docs: [here](https://www.apollographql.com/docs/react/data/subscriptions/)
+Subscription Schema : [here](https://docs.fairground.vega.xyz/api/graphql/subscription.doc.html)
 
 ```
 const GET_ORDERS = gql`
@@ -20,7 +20,7 @@ const GET_ORDERS = gql`
     }
 `
 ```
-Try The GraphQL code: [here] (https://lb.testnet.vega.xyz/playground)
+Try The GraphQL code: [here](https://lb.testnet.vega.xyz/playground)
 
 The Subscription is then initiated using the useSubscription function, using the specific market ID as a variable, passed in from the MrktData component.
 
@@ -79,7 +79,7 @@ If data is returned, the order is prepared and now the user is prompted to login
 Before we can submit the transaction, the raw TX must first be signed.
 Documentation for creating a wallet: [here](https://docs.fairground.vega.xyz/docs/wallet/getting-started/)
 OR
-Creating a Wallet with Wallet API: [here] (https://docs.fairground.vega.xyz/wallet-api/)
+Creating a Wallet with Wallet API: [here](https://docs.fairground.vega.xyz/wallet-api/)
 
 React Hooks are added to get the value of the inputs.
 ```
@@ -93,7 +93,7 @@ and a series of API calls are made to VEGA using fetch.
  
 ***1*** - **GET TOKEN**
 The user logs in to there wallet and recieves a token.
-See the documentation: [here] (https://docs.fairground.vega.xyz/wallet-api/#logging-in-to-a-wallet)
+See the documentation: [here](https://docs.fairground.vega.xyz/wallet-api/#logging-in-to-a-wallet)
 ```
 const url = " https://wallet.testnet.vega.xyz/api/v1/auth/token";
     const rawResponse = await fetch(url, {   
@@ -105,8 +105,8 @@ const url = " https://wallet.testnet.vega.xyz/api/v1/auth/token";
 
 ***2*** - **GET KEYS**
 Then the user gets there keys. If they dont have any keys, then keys are generated. We use the keys to access the pub Key and algorithm.
-See the documentation for retrieving keys: [here] (https://docs.fairground.vega.xyz/wallet-api/#list-keys)
-See the documentation for generating keys [here] (https://docs.fairground.vega.xyz/wallet-api/#generate-a-new-key-pair)
+See the documentation for retrieving keys: [here](https://docs.fairground.vega.xyz/wallet-api/#list-keys)
+See the documentation for generating keys [here](https://docs.fairground.vega.xyz/wallet-api/#generate-a-new-key-pair)
 
 **GET KEYS**
 ```
@@ -138,6 +138,7 @@ const getKeysURL = "https://wallet.testnet.vega.xyz/api/v1/keys"
 ```
 ***3*** - **SIGN TRANSACTION**
 Once the user has retrieved there keys, the pub Key is used to sign the transaction along with the raw TX from the prepared order.
+See the documentation for signing transactions: [here](https://docs.fairground.vega.xyz/wallet-api/#sign-a-transaction)
 ```
  const signURL = "https://wallet.testnet.vega.xyz/api/v1/messages"
     const signTX = await fetch(signURL, {
@@ -152,7 +153,7 @@ Once the user has retrieved there keys, the pub Key is used to sign the transact
 
 ***4*** - **SUBMIT ORDER**
 To submit the order a GraphQL Mutation will need to be made.
-
+See the Schema for submitted transactions: [here](https://docs.fairground.vega.xyz/api/graphql/transactionsubmitted.doc.html)
 ```
 const SUBMIT_ORDER = gql`
     mutation submitOrder($data: String!, $sign: SignatureInput!){
