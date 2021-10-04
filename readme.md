@@ -11,5 +11,5 @@ Everything starts at Index.js.
 
 ***Navigate to react-apollo/src for further documentation for this application.***
 
-![alt text](https://github.com/DTIV/VegaShowcase/img/img1.png)
+![alt text](https://github.com/DTIV/VegaShowcase/img/7570fba545d82e798d825fbc7585ac6184048bf5/main/img1.png)
 
