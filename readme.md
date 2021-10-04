@@ -11,5 +11,5 @@ Everything starts at Index.js.
 
 ***Navigate to react-apollo/src for further documentation for this application.***
 
-[![name](https://github.com/DTIV/VegaShowcase/img/img1.png)]
+[![name](img/img1.png)]
 
