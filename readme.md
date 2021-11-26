@@ -1,5 +1,9 @@
 # VEGA SHOWCASE APPLICATION
 -------------------------
+
+VIEW LIVE : [here](https://quizzical-engelbart-f32810.netlify.app/)
+
+
 This Showcase application is my submission for Gitcoin Grants Round 11 Hackathon: Build Amazing GraphQL Reference Applications Against The Vega APIs.
 This is a react application utilizing Vegas GraphQL API and Apollo. This application features using Queries to listing markets and there status. Users can view market data for a specific trading product, Prepare, sign and submit orders for a particular market using Mutations, and view streaming trade and order data with Subscriptions. Users can also access public party data, view party balances and any governace proposals related to the selected party.
 
